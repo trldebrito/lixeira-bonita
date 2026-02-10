@@ -16,10 +16,10 @@ import guaranteImg from '../assets/selo-garantia.png'
         </h2>
 
         <p class="text-gray-600 mb-4">
-            Na Ali Variedades, acreditamos tanto na qualidade e durabilidade dos nossos produtos que oferecemos 10 anos de garantia.
+          Confiamos no que fazemos e queremos que você também tenha essa confiança ao escolher nossas lixeiras.
         </p>
         <p class="text-gray-600">
-            Confiamos no que fazemos e queremos que você também tenha essa confiança ao escolher nossas lixeiras.
+          Com nossa garantia, você pode ter certeza de que está investindo em uma solução, prática e feita com carinho.
         </p>
       </div>
     </div>

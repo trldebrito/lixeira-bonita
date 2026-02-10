@@ -5,9 +5,9 @@ import logoIcone from '../assets/logo-mapa.png' // Ícone quadrado verde escuro
 </script>
 
 <template>
-  <section class="py-20 bg-[#E9EEF2] flex justify-center px-4">
+  <section class="py-20 bg-[#E9EEF2] flex justify-center">
     
-    <div class="bg-white rounded-[40px] shadow-sm max-w-5xl w-full relative p-8 md:p-16 mt-10">
+    <div class="bg-white rounded-[40px] shadow-sm max-w-6xl w-full relative p-8 md:p-16 mt-10">
       
       <div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-[#0e3a28] w-20 h-20 rounded-2xl flex items-center justify-center shadow-lg ">
         <img v-if="logoIcone" :src="logoIcone" alt="Icone" />

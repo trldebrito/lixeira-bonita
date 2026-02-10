@@ -32,7 +32,7 @@ import divSection from '../assets/section-div.png'
         </p>
 
         <button class="group bg-[#155e42] hover:bg-[#0e3a28] text-white pl-8 pr-2 py-2 rounded-full font-medium text-lg transition-all shadow-lg flex items-center gap-4 mt-8">
-          Compre Minha Lixeira 
+          Comprar Minha Lixeira 
           <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -53,5 +53,6 @@ import divSection from '../assets/section-div.png'
     </div>
 
   </section>
-  <img :src="divSection" alt="Divisão" class="w-full h-24 object-cover object-center" />
+
+  <img :src="divSection" alt="Divisão" class="w-full object-cover object-center" />
 </template>

@@ -17,25 +17,25 @@ const isMobileOpen = ref(false)
       <div class="hidden md:flex items-center space-x-14 text-lg font-medium text-gray-700">
         
         <div class="relative group h-full flex items-center cursor-pointer py-2">
-          <button class="flex items-center gap-2 hover:text-[#114232] transition-colors focus:outline-none">
+          <RouterLink to="/produtos" class="flex items-center gap-2 hover:text-[#114232] transition-colors focus:outline-none">
             Produtos
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mt-0.5 group-hover:rotate-180 transition-transform duration-200">
               <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
             </svg>
-          </button>
+          </RouterLink>
 
           <div class="absolute top-full left-0 pt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
             <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden py-2">
-              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeira MPCE</a>
-              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeira MP 70</a>
-              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeira MPS 70</a>
+              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para Familias</a>
+              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para empresas e condomínios</a>
+              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para setores públicos</a>
             </div>
           </div>
         </div>
 
-        <a href="#" class="hover:text-[#114232] transition-colors">Sobre</a>
-        <a href="#" class="hover:text-[#114232] transition-colors">Seja Parceiro</a>
-        <a href="#" class="hover:text-[#114232] transition-colors">Fale conosco</a>
+        <RouterLink to="/sobre" class="hover:text-[#114232] transition-colors">Sobre</RouterLink>
+        <RouterLink to="/seja-parceiro" class="hover:text-[#114232] transition-colors">Seja Parceiro</RouterLink>
+        <RouterLink to="/fale-conosco" class="hover:text-[#114232] transition-colors">Fale conosco</RouterLink>
       </div>
       
       <button @click="isMobileOpen = !isMobileOpen" class="md:hidden text-gray-800 focus:outline-none z-50 p-2">

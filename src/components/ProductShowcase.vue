@@ -60,7 +60,7 @@ const products = [
               />
             </div>
 
-            <button class="group bg-[#155e42] hover:bg-[#0e3a28] text-white pl-8 pr-2 py-2 rounded-full font-medium text-lg transition-all shadow-lg flex items-center gap-4 mt-8">
+            <RouterLink to="/produto/mp70" class="group bg-[#155e42] hover:bg-[#0e3a28] text-white pl-8 pr-2 py-2 rounded-full font-medium text-lg transition-all shadow-lg flex items-center gap-4 mt-8">
               Comprar
               <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
                   <svg 
@@ -74,7 +74,7 @@ const products = [
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </div>
-            </button>
+            </RouterLink>
 
             
 
