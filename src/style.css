@@ -1,1 +1,64 @@
 @import "tailwindcss";
+
+@theme {
+  /* Isso substitui a config do tailwind.config.js */
+  
+  /* Sobrescreve a font-sans padrão para Satoshi */
+  --font-sans: "Satoshi", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Sobrescreve a font-serif para Libre Bodoni */
+  --font-serif: "Libre Bodoni", ui-serif, Georgia, serif;
+  
+  /* Cria a nova classe .font-serotiva */
+  --font-serotiva: "Serotiva", sans-serif;
+  
+  /* Suas cores personalizadas também podem vir aqui se quiser */
+  --color-brand-dark: #0e3a28;
+  --color-brand-medium: #155e42;
+  --color-brand-light: #e6f5eb;
+  --color-brand-accent: #fbbf24;
+}
+
+/* --- DECLARAÇÃO DOS ARQUIVOS DE FONTE --- */
+
+/* 1. Satoshi */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/Satoshi/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/Satoshi/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 2. Libre Bodoni */
+@font-face {
+  font-family: 'Libre Bodoni';
+  src: url('./assets/fonts/Libre_Bodoni/LibreBodoni-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Bodoni';
+  src: url('./assets/fonts/Libre_Bodoni/LibreBodoni-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* 3. Serotiva (Pasta serotiva-font-family) */
+@font-face {
+  font-family: 'Serotiva';
+  src: url('./assets/fonts/serotiva-font-family/Serotiva-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Serotiva';
+  src: url('./assets/fonts/serotiva-font-family/Serotiva-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}

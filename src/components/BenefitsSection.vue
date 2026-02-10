@@ -1,9 +1,9 @@
 <template>
   <section class="py-24 bg-[#E9EEF2]">
     <div class="max-w-[1200px] mx-auto px-6">
-      
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold text-black uppercase leading-tight tracking-tight">
+
+      <div class="max-w-[1400px] mx-auto relative px-4 md:px-12 mb-12">
+        <h2 class="text-center text-6xl md:text-7xl font-semibold text-black tracking-tight uppercase font-serotiva">
           Benefícios de uma <br>
           Lixeira Bonita
         </h2>
@@ -23,7 +23,7 @@
           <h3 class="text-lg font-bold text-black mb-6 uppercase tracking-wide">
             Qualidade e <br> Durabilidade
           </h3>
-          <p class="text-[15px] text-gray-500 font-light leading-relaxed">
+          <p class="text-[15px] text-gray-500 font-light leading-relaxed font-serotiva">
             A Lixeira Bonita reduz mau cheiro, evita mosquitos e ação de animais. É durável (mínimo 50 anos) com manutenção quase desprezível. Tem garantia inigualável. Possui diversos modelos e tamanhos.
           </p>
         </div>
@@ -32,7 +32,7 @@
           <h3 class="text-lg font-bold text-black mb-6 uppercase tracking-wide">
             Instalação
           </h3>
-          <p class="text-[15px] text-gray-500 font-light leading-relaxed">
+          <p class="text-[15px] text-gray-500 font-light leading-relaxed font-serotiva">
             Pode ser instaladas em muros, grades e suportes. Pode ser removida conforme necessidade. Pode ser facilmente pintada. Poderá ser fornecida com os parafusos de fixação em muros, suporte para grades ou suporte para fixar em solo.
           </p>
         </div>
@@ -41,7 +41,7 @@
           <h3 class="text-lg font-bold text-black mb-6 uppercase tracking-wide">
             Higienização
           </h3>
-          <p class="text-[15px] text-gray-500 font-light leading-relaxed">
+          <p class="text-[15px] text-gray-500 font-light leading-relaxed font-serotiva">
             Fácil de higienizar. É um objeto ornamental quando mantida limpa. Pode ser limpa até com solventes.
           </p>
         </div>
