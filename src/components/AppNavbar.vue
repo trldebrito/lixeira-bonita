@@ -10,9 +10,9 @@ const isMobileOpen = ref(false)
     
     <div class="max-w-[1400px] mx-auto flex justify-between items-center">
       
-      <a href="/" class="flex-shrink-0 z-50 hover:opacity-80 transition-opacity">
+      <RouterLink to="/" class="flex-shrink-0 z-50 hover:opacity-80 transition-opacity" @click="isMobileOpen = false">
         <img :src="logoImg" alt="Lixeira Bonita" class="h-12 w-auto object-contain" />
-      </a>
+      </RouterLink>
 
       <div class="hidden md:flex items-center space-x-14 text-lg font-medium text-gray-700">
         
@@ -24,11 +24,11 @@ const isMobileOpen = ref(false)
             </svg>
           </RouterLink>
 
-          <div class="absolute top-full left-0 pt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+          <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
             <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden py-2">
-              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para Familias</a>
-              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para empresas e condomínios</a>
-              <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para setores públicos</a>
+              <RouterLink to="/produtos" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para Famílias</RouterLink>
+              <RouterLink to="/produtos" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para Empresas</RouterLink>
+              <RouterLink to="/produtos" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para Setor Público</RouterLink>
             </div>
           </div>
         </div>
@@ -48,10 +48,39 @@ const isMobileOpen = ref(false)
       </button>
 
       <div v-if="isMobileOpen" class="fixed inset-0 top-[88px] bg-white z-40 flex flex-col items-center pt-10 space-y-8 md:hidden overflow-y-auto">
-        <a href="#" class="text-xl font-medium text-gray-800">Produtos</a>
-        <a href="#" class="text-xl font-medium text-gray-800">Sobre</a>
-        <a href="#" class="text-xl font-medium text-gray-800">Seja Parceiro</a>
-        <a href="#" class="text-xl font-medium text-gray-800">Fale conosco</a>
+        
+        <RouterLink 
+          to="/produtos" 
+          @click="isMobileOpen = false" 
+          class="text-xl font-medium text-gray-800 hover:text-[#114232]"
+        >
+          Produtos
+        </RouterLink>
+
+        <RouterLink 
+          to="/sobre" 
+          @click="isMobileOpen = false" 
+          class="text-xl font-medium text-gray-800 hover:text-[#114232]"
+        >
+          Sobre
+        </RouterLink>
+
+        <RouterLink 
+          to="/seja-parceiro" 
+          @click="isMobileOpen = false" 
+          class="text-xl font-medium text-gray-800 hover:text-[#114232]"
+        >
+          Seja Parceiro
+        </RouterLink>
+
+        <RouterLink 
+          to="/fale-conosco" 
+          @click="isMobileOpen = false" 
+          class="text-xl font-medium text-gray-800 hover:text-[#114232]"
+        >
+          Fale conosco
+        </RouterLink>
+
       </div>
 
     </div>
