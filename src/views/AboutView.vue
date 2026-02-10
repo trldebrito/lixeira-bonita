@@ -7,7 +7,7 @@
       </h1>
 
       <div class="w-full h-[400px] bg-white rounded-[30px] flex items-center justify-center mb-12 shadow-sm border border-gray-200">
-        <span class="text-gray-400">Foto mulher da empresa</span>
+        <span class="text-gray-400">Foto da empresa</span>
       </div>
 
       <p class="text-lg text-black font-medium leading-relaxed max-w-4xl mb-16">
