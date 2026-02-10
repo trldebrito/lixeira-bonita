@@ -1,3 +1,6 @@
+<script setup>
+import companyImg from '../assets/empresa.jpeg'
+</script>
 <template>
   <div class="bg-[#F0F2F5] min-h-screen pb-20 font-sans pt-10">
     <div class="max-w-[1200px] mx-auto px-6">
@@ -7,7 +10,7 @@
       </h1>
 
       <div class="w-full h-[400px] bg-white rounded-[30px] flex items-center justify-center mb-12 shadow-sm border border-gray-200">
-        <span class="text-gray-400">Foto da empresa</span>
+        <img :src="companyImg" alt="Foto da empresa" class="w-full h-full object-cover object-center rounded-[30px]" />
       </div>
 
       <p class="text-lg text-black font-medium leading-relaxed max-w-4xl mb-16">
