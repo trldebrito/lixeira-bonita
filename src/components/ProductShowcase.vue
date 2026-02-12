@@ -28,7 +28,7 @@ const products = [
       </h2>
     </div>
 
-    <div class="w-full border-y border-black bg-[#F0F2F5] relative">
+    <div class="w-full bg-[#F0F2F5] relative">
       
       <div class="max-w-[1400px] mx-auto relative">
 
@@ -44,7 +44,7 @@ const products = [
           </svg>
         </button>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black">
+        <div class="grid grid-cols-1 md:grid-cols-3">
           
           <div v-for="(product, index) in products" :key="index" class="py-12 px-6 flex flex-col items-center text-center group relative">
             

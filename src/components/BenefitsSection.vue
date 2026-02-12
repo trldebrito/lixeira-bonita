@@ -17,7 +17,7 @@
         </button>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <div class="bg-white p-10 rounded-[30px] shadow-sm flex flex-col items-start text-left h-full">
           <h3 class="text-lg font-bold text-black mb-6 uppercase tracking-wide">
@@ -46,7 +46,7 @@
           </p>
         </div>
 
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
