@@ -13,8 +13,8 @@ import GroupSection from '../components/GroupSection.vue'
     <HeroSection />
     <ProductShowcase />
     <MapSection />
-    <BenefitsSection />
     <GuaranteeSection />
+    <BenefitsSection />
     <ResellerSection />
     <GroupSection />
   </main>

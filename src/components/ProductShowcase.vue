@@ -9,10 +9,6 @@ import lixeira4 from '../assets/lixeira-favorite/4.png'
 import lixeira5 from '../assets/lixeira-favorite/5.png'
 import lixeira6 from '../assets/lixeira-favorite/6.png'
 
-import lixeiraMpce from '../assets/lixeira-mpce.png'
-import lixeiraMp70 from '../assets/lixeira-mp70.png'
-import lixeiraMps70 from '../assets/lixeira-mps70.png'
-
 const products = [
   { name: 'Lixeira MP 150L', img: lixeira3 },
   { name: 'Lixeira MPS 40L', img: lixeira6 },

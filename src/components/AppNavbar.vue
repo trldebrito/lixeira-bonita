@@ -17,7 +17,8 @@ const isMobileOpen = ref(false)
       <div class="hidden md:flex items-center space-x-14 text-lg font-medium text-gray-700">
         
         <div class="relative group h-full flex items-center cursor-pointer py-2">
-          <RouterLink to="/produtos" class="flex items-center gap-2 hover:text-[#114232] transition-colors focus:outline-none">
+          
+          <RouterLink to="/produtos" class="flex items-center gap-2 hover:text-[#114232] transition-colors focus:outline-none relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#114232] after:transition-transform after:duration-300 hover:after:scale-x-100">
             Produtos
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mt-0.5 group-hover:rotate-180 transition-transform duration-200">
               <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -33,9 +34,27 @@ const isMobileOpen = ref(false)
           </div>
         </div>
 
-        <RouterLink to="/sobre" class="hover:text-[#114232] transition-colors">Sobre</RouterLink>
-        <RouterLink to="/seja-parceiro" class="hover:text-[#114232] transition-colors">Seja Parceiro</RouterLink>
-        <RouterLink to="/fale-conosco" class="hover:text-[#114232] transition-colors">Fale conosco</RouterLink>
+        <RouterLink 
+          to="/sobre" 
+          class="relative py-1 hover:text-[#114232] transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#114232] after:transition-transform after:duration-300 hover:after:scale-x-100"
+        >
+          Sobre
+        </RouterLink>
+        
+        <RouterLink 
+          to="/seja-parceiro" 
+          class="relative py-1 hover:text-[#114232] transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#114232] after:transition-transform after:duration-300 hover:after:scale-x-100"
+        >
+          Seja Parceiro
+        </RouterLink>
+        
+        <RouterLink 
+          to="/fale-conosco" 
+          class="relative py-1 hover:text-[#114232] transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#114232] after:transition-transform after:duration-300 hover:after:scale-x-100"
+        >
+          Fale conosco
+        </RouterLink>
+
       </div>
       
       <button @click="isMobileOpen = !isMobileOpen" class="md:hidden text-gray-800 focus:outline-none z-50 p-2">
@@ -48,39 +67,18 @@ const isMobileOpen = ref(false)
       </button>
 
       <div v-if="isMobileOpen" class="fixed inset-0 top-[88px] bg-white z-40 flex flex-col items-center pt-10 space-y-8 md:hidden overflow-y-auto">
-        
-        <RouterLink 
-          to="/produtos" 
-          @click="isMobileOpen = false" 
-          class="text-xl font-medium text-gray-800 hover:text-[#114232]"
-        >
+        <RouterLink to="/produtos" @click="isMobileOpen = false" class="text-xl font-medium text-gray-800 hover:text-[#114232]">
           Produtos
         </RouterLink>
-
-        <RouterLink 
-          to="/sobre" 
-          @click="isMobileOpen = false" 
-          class="text-xl font-medium text-gray-800 hover:text-[#114232]"
-        >
+        <RouterLink to="/sobre" @click="isMobileOpen = false" class="text-xl font-medium text-gray-800 hover:text-[#114232]">
           Sobre
         </RouterLink>
-
-        <RouterLink 
-          to="/seja-parceiro" 
-          @click="isMobileOpen = false" 
-          class="text-xl font-medium text-gray-800 hover:text-[#114232]"
-        >
+        <RouterLink to="/seja-parceiro" @click="isMobileOpen = false" class="text-xl font-medium text-gray-800 hover:text-[#114232]">
           Seja Parceiro
         </RouterLink>
-
-        <RouterLink 
-          to="/fale-conosco" 
-          @click="isMobileOpen = false" 
-          class="text-xl font-medium text-gray-800 hover:text-[#114232]"
-        >
+        <RouterLink to="/fale-conosco" @click="isMobileOpen = false" class="text-xl font-medium text-gray-800 hover:text-[#114232]">
           Fale conosco
         </RouterLink>
-
       </div>
 
     </div>
