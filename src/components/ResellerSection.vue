@@ -11,7 +11,7 @@ import divImg from '../assets/divMd.png'
 <template>
   <section class="font-sans w-full bg-[#134e35]">
 
-    <div class="bg-[#F0F2F5] pt-5 px-6 text-center">
+    <div class="bg-[#F0F2F5] px-6 text-center">
       <div class="max-w-5xl mx-auto flex flex-col items-center">
         <div class="flex gap-8 mb-30 h-10 items-center justify-center">
           <img :src="divImg" class="w-full h-full object-contain" alt="Divisão" />
