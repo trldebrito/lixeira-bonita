@@ -2,10 +2,10 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 // Imports das Imagens Desktop
-import slide4 from '../assets/slide-header/4.jpeg' 
-import slide3 from '../assets/slide-header/3.jpeg' 
-import slide2 from '../assets/slide-header/2.jpeg' 
-import slide1 from '../assets/slide-header/1.jpeg' 
+import slide4 from '../assets/slide-header/4.png' 
+import slide3 from '../assets/slide-header/3.png' 
+import slide2 from '../assets/slide-header/2.png' 
+import slide1 from '../assets/slide-header/1.png' 
 
 // Imports das Imagens Mobile
 import slideMobile4 from '../assets/slide-header-mobile/4.jpeg' 
@@ -22,9 +22,9 @@ const slides = [
     image: slide4, 
     mobileImage: slideMobile4,
     // Adicionado uma quebra de linha escondida no mobile (hidden md:block) se precisar ajustar
-    title: '<span class="text-white">Lixeiras que unem <br>design, </span><span class="font-serif italic text-white">resistência</span><span class="text-white"> e <br></span><span class="font-serif italic text-white">praticidade</span>',
+    title: '<span class="text-white font-sans font-bold">Lixeiras que unem <br>design, resistência e praticidade',
     description: 'A solução ideal para quem quer organização, higiene e durabilidade no dia a dia.',
-    descClass: 'text-gray-100', 
+    descClass: 'text-gray-100 font-sans font-bold', 
     buttonText: 'Comprar Minha Lixeira',
     // Alinhamento: Centro (Ambas as telas), Esquerda
     contentClass: 'justify-center', 
@@ -34,21 +34,21 @@ const slides = [
     id: 2,
     image: slide3, 
     mobileImage: slideMobile3,
-    title: '<span class="text-black">Segurança e higiene <br>no </span><span class="font-serif italic text-[#155e42]">descarte de <br>resíduos hospitalares</span>',
+    title: '<span class="text-black font-sans font-bold">Segurança e higiene no descarte de resíduos hospitalares</span>',
     description: 'Projetadas para ambientes de saúde, com resistência, vedação e conformidade com as exigências sanitárias.',
-    descClass: 'text-black font-medium', 
+    descClass: 'text-black font-sans font-bold', 
     buttonText: 'Comprar Minha Lixeira',
     // Alinhamento: Final/Base no Mobile, Centro no Desktop
-    contentClass: 'justify-end pb-16 md:pb-0 md:justify-center',
+    contentClass: 'justify-center',
     textAlign: 'text-left items-start'
   },
   {
     id: 3,
     image: slide2, 
     mobileImage: slideMobile2,
-    title: '<span class="font-serif italic text-white">Coleta seletiva que <br>valoriza o espaço e <br></span><span class="font-serif italic text-[#20b586]">o meio ambiente</span>',
+    title: '<span class="text-black font-sans font-bold">Coleta seletiva que <br>valoriza o espaço e o meio ambiente</span>',
     description: 'Estruturas duráveis e funcionais para incentivar o descarte correto e a sustentabilidade no dia a dia.',
-    descClass: 'text-gray-100', 
+    descClass: 'font-sans font-bold', 
     buttonText: 'Comprar Minha Lixeira',
     // Alinhamento: Topo no Mobile, Centro no Desktop | Centralizado no Mobile, Esquerda no Desktop
     contentClass: 'justify-start pt-24 md:pt-0 md:justify-center',
@@ -58,7 +58,7 @@ const slides = [
     id: 4,
     image: slide1, 
     mobileImage: slideMobile1,
-    title: '<span class="block mb-4"><svg width="40" height="15" viewBox="0 0 40 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 7.5H38M38 7.5L32 1.5M38 7.5L32 13.5" stroke="black" stroke-width="1.5"/></svg></span><span class="text-black font-normal">Soluções que <br>mantêm espaços <br></span><span class="font-serif italic text-black">coletivos limpos e <br>organizados</span>',
+    title: '<span class="text-black font-sans font-bold">Soluções que <br>mantêm espaços coletivos limpos e organizados</span>',
     description: 'Ideais para áreas externas e de grande circulação, com resistência, praticidade e fácil manutenção.',
     descClass: 'text-black font-medium', 
     buttonText: 'Comprar Minha Lixeira',
