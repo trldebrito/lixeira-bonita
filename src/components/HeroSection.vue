@@ -8,62 +8,58 @@ import slide2 from '../assets/slide-header/2.png'
 import slide1 from '../assets/slide-header/1.png' 
 
 // Imports das Imagens Mobile
-import slideMobile4 from '../assets/slide-header-mobile/4.jpeg' 
-import slideMobile3 from '../assets/slide-header-mobile/3.jpg' 
-import slideMobile2 from '../assets/slide-header-mobile/2.jpg' 
-import slideMobile1 from '../assets/slide-header-mobile/1.jpg' 
+import slideMobile4 from '../assets/slide-header-mobile/4.png' 
+import slideMobile3 from '../assets/slide-header-mobile/3.png' 
+import slideMobile2 from '../assets/slide-header-mobile/2.png' 
+import slideMobile1 from '../assets/slide-header-mobile/1.png' 
 
 import divSection from '../assets/section-div.png' 
 
 // Configuração Inteligente dos Slides
 const slides = [
   {
-    id: 1,
+    id: 1, // Fundo escuro
     image: slide4, 
     mobileImage: slideMobile4,
-    // Adicionado uma quebra de linha escondida no mobile (hidden md:block) se precisar ajustar
-    title: '<span class="text-white font-sans font-bold">Lixeiras que unem <br>design, resistência e praticidade',
+    title: '<span class="text-white font-atyp-medium">Lixeiras que unem<br>design, resistência<br>e praticidade</span>',
     description: 'A solução ideal para quem quer organização, higiene e durabilidade no dia a dia.',
-    descClass: 'text-gray-100 font-sans font-bold', 
+    descClass: 'text-gray-100 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
-    // Alinhamento: Centro (Ambas as telas), Esquerda
-    contentClass: 'justify-center', 
+    // Todos grudados no topo no mobile (pt-24 ou pt-28)
+    contentClass: 'justify-start pt-28 md:pt-0 md:justify-center w-full md:w-1/2', 
     textAlign: 'text-left items-start'
   },
   {
-    id: 2,
+    id: 2, // Hospitalar
     image: slide3, 
     mobileImage: slideMobile3,
-    title: '<span class="text-black font-sans font-bold">Segurança e higiene no descarte de resíduos hospitalares</span>',
+    title: '<span class="text-black font-atyp-medium">Segurança e<br>higiene no<br>descarte de<br>resíduos<br>hospitalares</span>',
     description: 'Projetadas para ambientes de saúde, com resistência, vedação e conformidade com as exigências sanitárias.',
-    descClass: 'text-black font-sans font-bold', 
+    descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
-    // Alinhamento: Final/Base no Mobile, Centro no Desktop
-    contentClass: 'justify-center',
+    contentClass: 'justify-start pt-28 md:pt-0 md:justify-center w-full md:w-1/2',
     textAlign: 'text-left items-start'
   },
   {
-    id: 3,
+    id: 3, // 3 Lixeiras
     image: slide2, 
     mobileImage: slideMobile2,
-    title: '<span class="text-black font-sans font-bold">Coleta seletiva que <br>valoriza o espaço e o meio ambiente</span>',
+    title: '<span class="text-black font-atyp-medium">Coleta seletiva<br>que valoriza o<br>espaço e o meio<br>ambiente</span>',
     description: 'Estruturas duráveis e funcionais para incentivar o descarte correto e a sustentabilidade no dia a dia.',
-    descClass: 'font-sans font-bold', 
+    descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
-    // Alinhamento: Topo no Mobile, Centro no Desktop | Centralizado no Mobile, Esquerda no Desktop
-    contentClass: 'justify-start pt-24 md:pt-0 md:justify-center',
-    textAlign: 'text-center items-center md:text-left md:items-start'
+    contentClass: 'justify-start pt-28 md:pt-0 md:justify-center w-full md:w-1/2',
+    textAlign: 'text-left items-start'
   },
   {
-    id: 4,
+    id: 4, // Card branco
     image: slide1, 
     mobileImage: slideMobile1,
-    title: '<span class="text-black font-sans font-bold">Soluções que <br>mantêm espaços coletivos limpos e organizados</span>',
+    title: '<span class="text-black font-atyp-medium">Soluções que<br>mantêm espaços<br>coletivos limpos e<br>organizados</span>',
     description: 'Ideais para áreas externas e de grande circulação, com resistência, praticidade e fácil manutenção.',
-    descClass: 'text-black font-medium', 
+    descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
-    // Alinhamento: Topo no Mobile, Centro no Desktop
-    contentClass: 'justify-start pt-24 md:pt-0 md:justify-center',
+    contentClass: 'justify-start pt-28 md:pt-0 md:justify-center w-full md:w-1/2',
     textAlign: 'text-left items-start'
   }
 ]

@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Atyp", ui-sans-serif, system-ui, sans-serif;
+  --font-atyp-bold: "Atyp-Bold", ui-sans-serif, system-ui, sans-serif;
+  --font-atyp: "Atyp", ui-sans-serif, system-ui, sans-serif;
+  --font-atyp-medium: "Atyp-Medium", ui-sans-serif, system-ui, sans-serif;
   
-  /* Suas cores personalizadas também podem vir aqui se quiser */
   --color-brand-dark: #0e3a28;
   --color-brand-medium: #155e42;
   --color-brand-light: #e6f5eb;
@@ -11,8 +12,23 @@
 }
 
 @font-face {
-  font-family: 'Atyp';
-  src: url('./assets/fonts/atyp/AtypTEST-VariableVF-BF6572712446914.ttf') format('truetype');
-  font-weight: 100 900; 
+  font-family: 'Atyp-Bold';
+  src: url('./assets/fonts/atyp/AtypDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Atyp';
+  src: url('./assets/fonts/atyp/AtypDisplay-Regular.ttf') format('truetype'); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atyp-Medium';
+  src: url('./assets/fonts/atyp/AtypDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal; 
+}
+
