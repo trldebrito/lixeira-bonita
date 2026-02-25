@@ -26,7 +26,7 @@ import divFooter from '../assets/footer-div.png'
                 </a>
             </div>
 
-            <div class="space-y-6 font-light">
+            <div class="space-y-6 font-atyp">
                 <div>
                     <span class="block">Telefone/WhatsApp:</span>
                     <span class="block">+55 (48) 99921-0021</span>
@@ -43,7 +43,7 @@ import divFooter from '../assets/footer-div.png'
         </div>
 
         <div class="md:col-span-3 pt-4 md:pt-[76px]">
-            <h4 class="text-[16px] font-normal mb-5">Institucional</h4>
+            <h4 class="text-[16px] font-atyp mb-5">Institucional</h4>
             <ul class="space-y-2 font-light">
                 <li><a href="#" class="hover:text-gray-300 transition">Quem somos</a></li>
                 <li><a href="#" class="hover:text-gray-300 transition">Seja parceiro</a></li>
@@ -52,7 +52,7 @@ import divFooter from '../assets/footer-div.png'
         </div>
 
         <div class="md:col-span-4 pt-4 md:pt-[76px]">
-            <h4 class="text-[16px] font-normal mb-5">Informações</h4>
+            <h4 class="text-[16px] font-atyp mb-5">Informações</h4>
             <ul class="space-y-2 font-light">
                 <li><a href="#" class="hover:text-gray-300 transition">Políticas de privacidade</a></li>
             </ul>
@@ -60,7 +60,7 @@ import divFooter from '../assets/footer-div.png'
 
       </div>
 
-      <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-[13px] font-light gap-4">
+      <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-[13px] font-atyp gap-4">
           <p>Motopam. Todos os direitos reservados.</p>
           <p>Desenvolvido por <a href="#" class="underline hover:text-gray-300 transition">RG Produções</a></p>
       </div>

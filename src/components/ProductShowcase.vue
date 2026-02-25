@@ -75,7 +75,7 @@ onUnmounted(() => {
   <section class="py-16 bg-[#F0F2F5]"> 
       
     <div class="max-w-[1400px] mx-auto relative px-4 md:px-12 mb-12">
-      <h2 class="text-center text-6xl md:text-7xl font-semibold text-black tracking-tight uppercase font-serotiva">
+      <h2 class="font-atyp-medium text-center text-6xl md:text-7xl text-black tracking-tight uppercase font-serotiva">
         Favoritas
       </h2>
     </div>
@@ -114,7 +114,7 @@ onUnmounted(() => {
               class="w-full md:w-1/3 flex-shrink-0 py-8 md:py-12 px-4 md:px-6 flex flex-col items-center text-center group relative"
             >
               
-              <h3 class="text-2xl font-bold text-black mb-8">
+              <h3 class="text-2xl text-black mb-8 font-atyp">
                 {{ product.name }}
               </h3>
 
@@ -126,7 +126,7 @@ onUnmounted(() => {
                 />
               </div>
 
-              <RouterLink to="/produto/mp70" class="group/btn bg-[#155e42] hover:bg-[#0e3a28] text-white pl-8 pr-2 py-2 rounded-full font-medium text-lg transition-all shadow-lg flex items-center gap-4 mt-auto">
+              <RouterLink to="/produto/mp70" class="group/btn bg-[#155e42] hover:bg-[#0e3a28] text-white pl-8 pr-2 py-2 rounded-full font-atyp text-lg transition-all shadow-lg flex items-center gap-4 mt-auto">
                 Comprar
                 <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
                     <svg 

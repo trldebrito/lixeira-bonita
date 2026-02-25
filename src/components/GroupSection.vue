@@ -11,7 +11,7 @@ import imgGroup4 from '../assets/lixeira-bonita-logo.png' // Lixeira Bonita
     <div class="max-w-6xl mx-auto">
       
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-black uppercase tracking-wide mb-4">
+        <h2 class="text-3xl md:text-4xl font-atyp-medium text-black uppercase tracking-wide mb-4">
           GRUPO MOTOPAM
         </h2>
         <div class="w-16 h-1 bg-[#fbbf24] mx-auto rounded-full"></div>

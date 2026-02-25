@@ -34,7 +34,7 @@ import floresta from '../assets/floresta.jpeg'
             />
           </div>
 
-          <div class="w-full md:flex-1 text-white text-base md:text-[17px] font-light leading-relaxed">
+          <div class="w-full md:flex-1 text-white text-base md:text-[17px] font-atyp leading-relaxed">
             O manejo correto do lixo é um gesto simples que gera um impacto enorme no meio ambiente. 
             Quando o descarte é feito com higiene, organização e responsabilidade, reduzimos a 
             contaminação do solo e da água, evitamos a proliferação de pragas. Cuidar do lixo é cuidar da 
@@ -64,16 +64,16 @@ import floresta from '../assets/floresta.jpeg'
 
           <div class="w-full md:w-1/2 text-left space-y-6">
             
-            <h2 class="text-3xl md:text-4xl font-semibold text-black leading-[1.1] tracking-tight">
+            <h2 class="text-3xl md:text-4xl font-atyp-medium text-black leading-[1.1] tracking-tight">
                 LIXEIRA BONITA <br> PERTO DE VOCÊ
             </h2>
             
-            <p class="text-base text-gray-500 font-normal leading-relaxed max-w-[320px]">
+            <p class="text-base text-gray-500 font-atyp leading-relaxed max-w-[320px]">
                 Nós temos pontos de revenda perto de você.
                 Entre em contato e descubra um vendedor pertinho de você.
             </p>
 
-            <button class="group bg-[#155e42] hover:bg-[#0e3a28] text-white pl-6 pr-2 py-2 rounded-full text-base font-medium transition-all shadow-md flex items-center gap-4 w-fit mt-4">
+            <button class="group bg-[#155e42] hover:bg-[#0e3a28] text-white pl-6 pr-2 py-2 rounded-full text-base font-atyp transition-all shadow-md flex items-center gap-4 w-fit mt-4">
                 Falar Com Revendedor 
                 <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="#155e42" class="w-4 h-4 transition-transform duration-300 group-hover:rotate-45">

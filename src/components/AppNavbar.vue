@@ -14,7 +14,7 @@ const isMobileOpen = ref(false)
         <img :src="logoImg" alt="Lixeira Bonita" class="h-12 w-auto object-contain" />
       </RouterLink>
 
-      <div class="hidden md:flex items-center space-x-14 text-lg font-medium text-gray-700">
+      <div class="hidden md:flex items-center space-x-14 text-lg font-atyp text-gray-700">
         
         <div class="relative group h-full flex items-center cursor-pointer py-2">
           
@@ -25,7 +25,7 @@ const isMobileOpen = ref(false)
             </svg>
           </RouterLink>
 
-          <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+          <div class="absolute font-atyp top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
             <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden py-2">
               <RouterLink to="/produtos" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para Famílias</RouterLink>
               <RouterLink to="/produtos" class="block px-6 py-3 hover:bg-gray-50 hover:text-[#114232] text-base">Lixeiras para Empresas</RouterLink>

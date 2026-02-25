@@ -21,9 +21,8 @@ import divImg from '../assets/divMd.png'
     
     <div class="pt-20 pb-16 px-6 text-center">
       <div class="max-w-4xl mx-auto flex flex-col items-center">
-        <h2 class="text-5xl md:text-6xl lg:text-7xl font-medium text-white uppercase leading-tight tracking-tight">
-          SEJA UMA REVENDA <br>
-          LIXEIRA BONITA
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-atyp-medium text-white uppercase leading-tight tracking-tight">
+          SEJA UMA REVENDA LIXEIRA BONITA
         </h2>
       </div>
     </div>
@@ -42,8 +41,8 @@ import divImg from '../assets/divMd.png'
               <div class="w-10 h-10 mb-6 flex items-center justify-start">
                  <img :src="imgCenario6" class="w-full h-full object-contain" alt="Ícone Qualidade" />
               </div>
-              <h3 class="text-xl md:text-2xl font-medium uppercase mb-4 leading-snug tracking-wide">QUALIDADE E <br> DURABILIDADE</h3>
-              <p class="text-[15px] font-light leading-relaxed text-gray-200">
+              <h3 class="text-xl md:text-2xl font-atyp-medium uppercase mb-4 leading-snug tracking-wide">QUALIDADE E <br> DURABILIDADE</h3>
+              <p class="text-[15px] font-atyp leading-relaxed text-gray-200">
                 Lixeiras fabricadas desde 2004 estão em pleno funcionamento e podem ser reparadas em sua pintura interna, cordões e dobradiças, além de serem polidas, sem custo algum ao proprietário que agendar e a conduzir até nossa fábrica. (Vide regulamento)
               </p>
             </div>
@@ -57,8 +56,8 @@ import divImg from '../assets/divMd.png'
               <div class="w-10 h-10 mb-6 flex items-center justify-start">
                  <img :src="imgCenario5" class="w-full h-full object-contain" alt="Ícone Revenda" />
               </div>
-              <h3 class="text-xl md:text-2xl font-medium uppercase mb-4 leading-snug tracking-wide">REVENDAS</h3>
-              <p class="text-[15px] font-light leading-relaxed text-gray-200">
+              <h3 class="text-xl md:text-2xl font-atyp-medium uppercase mb-4 leading-snug tracking-wide">REVENDAS</h3>
+              <p class="text-[15px] font-atyp leading-relaxed text-gray-200">
                 Nossos produtos possuem ótimo valor para revenda, não é perecível e asseguramos aos nossos revendedores produtos com garantia em sua loja.
               </p>
             </div>
@@ -72,8 +71,8 @@ import divImg from '../assets/divMd.png'
               <div class="w-10 h-10 mb-6 flex items-center justify-start">
                  <img :src="imgCenario4" class="w-full h-full object-contain" alt="Ícone Satisfação" />
               </div>
-              <h3 class="text-xl md:text-2xl font-medium uppercase mb-4 leading-snug tracking-wide">SATISFAÇÃO DE <br> NOSSOS CLIENTES</h3>
-              <p class="text-[15px] font-light leading-relaxed text-gray-200">
+              <h3 class="text-xl md:text-2xl font-atyp-medium uppercase mb-4 leading-snug tracking-wide">SATISFAÇÃO DE <br> NOSSOS CLIENTES</h3>
+              <p class="text-[15px] font-atyp leading-relaxed text-gray-200">
                 Fácil de higienizar. É um objeto ornamental quando mantida limpa. Pode ser limpa até com solventes.
               </p>
             </div>
@@ -83,7 +82,7 @@ import divImg from '../assets/divMd.png'
       </div>
 
       <div class="flex justify-center mt-12 relative z-30">
-         <RouterLink to="/seja-parceiro" class="group bg-[#3ba859] hover:bg-[#2e8b49] text-white pl-6 pr-2 py-2 rounded-full font-medium text-sm md:text-base tracking-wide transition-all shadow-xl flex items-center gap-4 uppercase">
+         <RouterLink to="/seja-parceiro" class="group bg-[#3ba859] hover:bg-[#2e8b49] text-white pl-6 pr-2 py-2 rounded-full font-atyp-medium text-sm md:text-base tracking-wide transition-all shadow-xl flex items-center gap-4 uppercase">
             QUERO SER UMA REVENDA
             <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="#3ba859" class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">

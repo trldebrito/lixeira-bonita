@@ -17,12 +17,12 @@ import guaranteImg from '../assets/selo-garantia.png'
 
       <div class="w-full md:w-7/12 text-left flex flex-col justify-center">
         
-        <h2 class="text-4xl md:text-[54px] font-bold text-black leading-[1.15] tracking-tight uppercase mb-8">
+        <h2 class="text-4xl md:text-[54px] font-atyp-medium text-black leading-[1.15] tracking-tight uppercase mb-8">
           VOCÊ TERÁ <span class="text-[#3ca85c]">10 ANOS</span> <br> 
           DE GARANTIA.
         </h2>
 
-        <div class="space-y-6 text-black text-base md:text-[18px] font-normal leading-relaxed max-w-[650px]">
+        <div class="space-y-6 text-black text-base md:text-[18px] font-atyp leading-relaxed max-w-[650px]">
           <p>
             Na Lixeira Bonita, acreditamos tanto na qualidade e durabilidade dos nossos produtos que oferecemos 10 anos de garantia na fibra e na dobradiça
           </p>

@@ -6,9 +6,8 @@
     <div class="relative z-10 max-w-[1200px] mx-auto px-6 pt-24">
 
       <div class="max-w-3xl mx-auto relative mb-16 text-center">
-        <h2 class="text-5xl md:text-6xl text-black leading-tight">
-          <span class="block font-bold uppercase tracking-tight mb-2">Benefícios de uma</span>
-          <span class="font-serif italic text-[#155e42]">Lixeira Bonita</span>
+        <h2 class="text-5xl md:text-6xl text-black leading-tight font-atyp-medium tracking-tight uppercase mb-4">
+          Benefícios de uma Lixeira Bonita
         </h2>
       </div>
 
