@@ -11,7 +11,7 @@ import slide1 from '../assets/slide-header/1.png'
 import slideMobile4 from '../assets/slide-header-mobile/4.png' 
 import slideMobile3 from '../assets/slide-header-mobile/3.png' 
 import slideMobile2 from '../assets/slide-header-mobile/2.jpeg' 
-import slideMobile1 from '../assets/slide-header-mobile/1.png' 
+import slideMobile1 from '../assets/slide-header-mobile/1.jpeg' 
 
 import divSection from '../assets/section-div.png' 
 
