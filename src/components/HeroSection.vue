@@ -26,18 +26,18 @@ const slides = [
     descClass: 'text-gray-100 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
     // Todos grudados no topo no mobile (pt-24 ou pt-28)
-    contentClass: 'justify-start pt-28 md:pt-0 md:justify-center w-full md:w-1/2', 
+    contentClass: 'justify-start pt-16 md:pt-0 md:justify-center w-full md:w-1/2', 
     textAlign: 'text-left items-start'
   },
   {
     id: 2, // Hospitalar
     image: slide3, 
     mobileImage: slideMobile3,
-    title: '<span class="text-black font-atyp-medium">Segurança e<br>higiene no<br>descarte de<br>resíduos<br>hospitalares</span>',
+    title: '<span class="text-black font-atyp-medium">Segurança e higiene no<br>descarte de resíduos<br>hospitalares</span>',
     description: 'Projetadas para ambientes de saúde, com resistência, vedação e conformidade com as exigências sanitárias.',
     descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
-    contentClass: 'justify-start pt-28 md:pt-0 md:justify-center w-full md:w-1/2',
+    contentClass: 'justify-start pt-16 md:pt-0 md:justify-center w-full md:w-1/2',
     textAlign: 'text-left items-start'
   },
   {
@@ -48,7 +48,7 @@ const slides = [
     description: 'Estruturas duráveis e funcionais para incentivar o descarte correto e a sustentabilidade no dia a dia.',
     descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
-    contentClass: 'justify-start pt-28 md:pt-0 md:justify-center w-full md:w-1/2',
+    contentClass: 'justify-start pt-16 md:pt-0 md:justify-center w-full md:w-1/2',
     textAlign: 'text-left items-start'
   },
   {
@@ -59,7 +59,7 @@ const slides = [
     description: 'Ideais para áreas externas e de grande circulação, com resistência, praticidade e fácil manutenção.',
     descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
-    contentClass: 'justify-start pt-28 md:pt-0 md:justify-center w-full md:w-1/2',
+    contentClass: 'justify-start pt-16 md:pt-0 md:justify-center w-full md:w-1/2',
     textAlign: 'text-left items-start'
   }
 ]
@@ -147,13 +147,13 @@ onUnmounted(() => {
           <div class="space-y-4 md:space-y-6 flex flex-col w-full" :class="slides[currentIndex].textAlign">
             
             <h1 
-              class="text-4xl md:text-6xl leading-tight tracking-wide font-light"
-              v-html="slides[currentIndex].title"
-            ></h1>
-            
-            <p :class="['text-base md:text-lg max-w-md', slides[currentIndex].descClass]">
-              {{ slides[currentIndex].description }}
-            </p>
+  class="text-3xl md:text-5xl lg:text-[64px] leading-[1.1] tracking-tight"
+  v-html="slides[currentIndex].title"
+></h1>
+
+<p :class="['text-sm md:text-base max-w-[280px] md:max-w-md leading-snug', slides[currentIndex].descClass]">
+  {{ slides[currentIndex].description }}
+</p>
 
             <button 
               v-if="slides[currentIndex].buttonText"
