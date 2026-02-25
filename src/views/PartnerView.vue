@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-import partnerImg from '../assets/patner-page.png' 
+import partnerImg from '../assets/patner-page.jpg' 
 
 // Estado do formulário (opcional, apenas para estrutura)
 const form = ref({
@@ -18,9 +18,8 @@ const form = ref({
     <div class="max-w-[1200px] mx-auto px-6">
       
       <div class="mb-12">
-        <h1 class="text-4xl md:text-6xl font-bold text-black uppercase leading-tight tracking-tight max-w-4xl">
-          Seja um revendedor <br class="hidden md:block" />
-          da Lixeira Bonita
+        <h1 class="text-4xl md:text-6xl font-atyp-medium text-black uppercase leading-tight tracking-tight max-w-4xl">
+          Seja um revendedor da Lixeira Bonita
         </h1>
       </div>
 
@@ -33,14 +32,14 @@ const form = ref({
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         
         <div class="space-y-6">
-          <h2 class="text-4xl font-light text-black leading-tight">
+          <h2 class="text-4xl font-atyp-medium text-black leading-tight">
             Quem pode ser <br>
             parceiro 
-            <span class="font-serif italic text-[#22c55e]">Lixeira</span> <br>
-            <span class="font-serif italic text-[#22c55e]">Bonita?</span>
+            <span class="font-serif font-atyp-medium italic text-[#22c55e]">Lixeira</span> <br>
+            <span class="font-serif font-atyp-medium italic text-[#22c55e]">Bonita?</span>
           </h2>
           
-          <p class="text-lg text-gray-800 font-light leading-relaxed text-justify max-w-md">
+          <p class="text-lg text-gray-800 font-atyp leading-relaxed text-justify max-w-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
           </p>
         </div>
@@ -49,7 +48,7 @@ const form = ref({
             <form class="space-y-5">
                 
                 <div>
-                    <label class="block font-bold text-black mb-2 pl-2">Nome</label>
+                    <label class="block font-atyp text-black mb-2 pl-2">Nome</label>
                     <input 
                       type="text" 
                       placeholder="João Silva..." 
@@ -58,7 +57,7 @@ const form = ref({
                 </div>
 
                 <div>
-                    <label class="block font-bold text-black mb-2 pl-2">Telefone</label>
+                    <label class="block font-atyp text-black mb-2 pl-2">Telefone</label>
                     <div class="flex gap-3">
                         <div class="w-20 bg-gray-200 rounded-full flex items-center justify-center px-2 py-3 text-gray-700 font-bold">
                             +55
@@ -72,7 +71,7 @@ const form = ref({
                 </div>
 
                 <div>
-                    <label class="block font-bold text-black mb-2 pl-2">Email</label>
+                    <label class="block font-atyp text-black mb-2 pl-2">Email</label>
                     <input 
                       type="email" 
                       placeholder="Coloque seu melhor email..." 
@@ -81,7 +80,7 @@ const form = ref({
                 </div>
 
                 <div>
-                    <label class="block font-bold text-black mb-2 pl-2">Cidade:</label>
+                    <label class="block font-atyp text-black mb-2 pl-2">Cidade:</label>
                     <input 
                       type="text" 
                       placeholder="Coloque sua cidade..." 
@@ -90,7 +89,7 @@ const form = ref({
                 </div>
 
                 <div class="pt-4">
-                    <button class="bg-[#22c55e] hover:bg-[#15803d] text-white font-bold py-3 px-10 rounded-full uppercase tracking-wider transition shadow-md w-full md:w-auto">
+                    <button class="bg-[#22c55e] hover:bg-[#15803d] text-white font-atyp-medium py-3 px-10 rounded-full uppercase tracking-wider transition shadow-md w-full md:w-auto">
                         CADASTRAR
                     </button>
                 </div>
