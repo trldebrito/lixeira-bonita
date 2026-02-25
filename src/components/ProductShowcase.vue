@@ -114,7 +114,7 @@ onUnmounted(() => {
               class="w-full md:w-1/3 flex-shrink-0 py-8 md:py-12 px-4 md:px-6 flex flex-col items-center text-center group relative"
             >
               
-              <h3 class="text-2xl text-black mb-8 font-atyp">
+              <h3 class="text-2xl text-black mb-8 font-atyp-medium">
                 {{ product.name }}
               </h3>
 
