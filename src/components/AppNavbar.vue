@@ -49,10 +49,10 @@ const isMobileOpen = ref(false)
         </RouterLink>
         
         <RouterLink 
-          to="/fale-conosco" 
-          class="relative py-1 hover:text-[#114232] transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#114232] after:transition-transform after:duration-300 hover:after:scale-x-100"
+          to="/quero/orcamento" 
+          class="bg-[#34A853] text-white px-6 py-2.5 rounded-full hover:bg-[#2E954A] transition-colors shadow-sm font-semibold"
         >
-          Fale conosco
+          Orçamento
         </RouterLink>
 
       </div>
@@ -76,8 +76,13 @@ const isMobileOpen = ref(false)
         <RouterLink to="/seja-parceiro" @click="isMobileOpen = false" class="text-xl font-medium text-gray-800 hover:text-[#114232]">
           Seja Parceiro
         </RouterLink>
-        <RouterLink to="/fale-conosco" @click="isMobileOpen = false" class="text-xl font-medium text-gray-800 hover:text-[#114232]">
-          Fale conosco
+        
+        <RouterLink 
+          to="/quero/orcamento" 
+          @click="isMobileOpen = false" 
+          class="bg-[#34A853] text-white px-8 py-3 rounded-full text-xl font-medium hover:bg-[#2E954A] transition-colors shadow-sm w-11/12 text-center mt-4"
+        >
+          Orçamento
         </RouterLink>
       </div>
 

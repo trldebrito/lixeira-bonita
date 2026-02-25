@@ -55,10 +55,8 @@
 
         </div>
 
-        <div class="h-full min-h-[400px]">
-             <div class="w-full h-full bg-gray-300 rounded-[30px] flex items-center justify-center overflow-hidden">
-                <img :src="contactImg" alt="Fale conosco" class="w-full h-full object-cover object-center" />
-             </div>
+        <div class="relative w-full h-full min-h-[400px] bg-gray-300 rounded-[30px] overflow-hidden">
+            <img :src="contactImg" alt="Fale conosco" class="absolute inset-0 w-full h-full object-cover object-center" />
         </div>
 
       </div>

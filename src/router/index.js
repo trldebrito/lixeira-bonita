@@ -12,7 +12,7 @@ const router = createRouter({
     { path: '/', name: 'home', component: HomeView },
     { path: '/sobre', name: 'about', component: AboutView },
     { path: '/seja-parceiro', name: 'partner', component: PartnerView },
-    { path: '/fale-conosco', name: 'contact', component: ContactView },
+    { path: '/quero/orcamento', name: 'contact', component: ContactView },
     { path: '/produto/:id', name: 'product-detail', component: ProductDetailView },
     { path: '/produtos', name: 'products', component: ProductsView },
   ],
