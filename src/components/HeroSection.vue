@@ -10,7 +10,7 @@ import slide1 from '../assets/slide-header/1.png'
 // Imports das Imagens Mobile
 import slideMobile4 from '../assets/slide-header-mobile/4.png' 
 import slideMobile3 from '../assets/slide-header-mobile/3.png' 
-import slideMobile2 from '../assets/slide-header-mobile/2.png' 
+import slideMobile2 from '../assets/slide-header-mobile/2.jpeg' 
 import slideMobile1 from '../assets/slide-header-mobile/1.png' 
 
 import divSection from '../assets/section-div.png' 
@@ -21,7 +21,7 @@ const slides = [
     id: 1, // Fundo escuro
     image: slide4, 
     mobileImage: slideMobile4,
-    title: '<span class="text-white font-atyp-medium">Lixeiras que unem<br>design, resistência<br>e praticidade</span>',
+    title: '<span class="text-white font-atyp-medium">Lixeiras que unem design, resistência e praticidade</span>',
     description: 'A solução ideal para quem quer organização, higiene e durabilidade no dia a dia.',
     descClass: 'text-gray-100 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
@@ -33,7 +33,7 @@ const slides = [
     id: 2, // Hospitalar
     image: slide3, 
     mobileImage: slideMobile3,
-    title: '<span class="text-black font-atyp-medium">Segurança e higiene no<br>descarte de resíduos<br>hospitalares</span>',
+    title: '<span class="text-black font-atyp-medium">Segurança e higiene no descarte de resíduos hospitalares</span>',
     description: 'Projetadas para ambientes de saúde, com resistência, vedação e conformidade com as exigências sanitárias.',
     descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
@@ -44,7 +44,7 @@ const slides = [
     id: 3, // 3 Lixeiras
     image: slide2, 
     mobileImage: slideMobile2,
-    title: '<span class="text-black font-atyp-medium">Coleta seletiva<br>que valoriza o<br>espaço e o meio<br>ambiente</span>',
+    title: '<span class="text-black font-atyp-medium">Coleta seletiva que valoriza o espaço e o meio ambiente</span>',
     description: 'Estruturas duráveis e funcionais para incentivar o descarte correto e a sustentabilidade no dia a dia.',
     descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
@@ -55,7 +55,7 @@ const slides = [
     id: 4, // Card branco
     image: slide1, 
     mobileImage: slideMobile1,
-    title: '<span class="text-black font-atyp-medium">Soluções que<br>mantêm espaços<br>coletivos limpos e<br>organizados</span>',
+    title: '<span class="text-black font-atyp-medium">Soluções que mantêm espaços coletivos limpos e organizados</span>',
     description: 'Ideais para áreas externas e de grande circulação, com resistência, praticidade e fácil manutenção.',
     descClass: 'text-gray-800 font-atyp text-[15px] md:text-base mt-4', 
     buttonText: 'Comprar Minha Lixeira',
