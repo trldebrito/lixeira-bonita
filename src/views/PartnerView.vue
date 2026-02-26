@@ -3,13 +3,16 @@ import { ref } from 'vue'
 
 import partnerImg from '../assets/patner-page.jpg' 
 
-// Estado do formulário (opcional, apenas para estrutura)
+// Estado do formulário atualizado com os novos campos da imagem
 const form = ref({
   nome: '',
-  ddd: '',
-  telefone: '',
   email: '',
-  cidade: ''
+  telefone: '',
+  celular: '',
+  estado: '',
+  cidade: '',
+  comoConheceu: 'Facebook',
+  mensagem: ''
 })
 </script>
 
@@ -35,8 +38,8 @@ const form = ref({
           <h2 class="text-4xl font-atyp-medium text-black leading-tight">
             Quem pode ser <br>
             parceiro 
-            <span class="font-serif font-atyp-medium italic text-[#22c55e]">Lixeira</span> <br>
-            <span class="font-serif font-atyp-medium italic text-[#22c55e]">Bonita?</span>
+            <span class="font-serif font-atyp-medium italic text-[#155e42]">Lixeira</span> <br>
+            <span class="font-serif font-atyp-medium italic text-[#155e42]">Bonita?</span>
           </h2>
           
           <p class="text-lg text-gray-800 font-atyp leading-relaxed text-justify max-w-md">
@@ -44,52 +47,96 @@ const form = ref({
           </p>
         </div>
 
-        <div class="bg-white rounded-[30px] p-8 md:p-10 shadow-sm w-full max-w-lg ml-auto">
-            <form class="space-y-5">
+        <div class="bg-white rounded-[30px] p-8 md:p-10 shadow-sm w-full max-w-xl ml-auto">
+            <form class="space-y-5" @submit.prevent>
                 
-                <div>
-                    <label class="block font-atyp text-black mb-2 pl-2">Nome</label>
-                    <input 
-                      type="text" 
-                      placeholder="João Silva..." 
-                      class="w-full bg-gray-200 rounded-full px-6 py-3 text-gray-700 outline-none focus:ring-2 focus:ring-green-500 transition placeholder-gray-400"
-                    >
-                </div>
-
-                <div>
-                    <label class="block font-atyp text-black mb-2 pl-2">Telefone</label>
-                    <div class="flex gap-3">
-                        <div class="w-20 bg-gray-200 rounded-full flex items-center justify-center px-2 py-3 text-gray-700 font-bold">
-                            +55
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    
+                    <div>
+                        <label class="block font-atyp-medium text-[#555555] text-[13px] uppercase mb-1.5 tracking-wide">Seu Nome</label>
                         <input 
-                          type="tel" 
-                          placeholder="(00) 00000-0000" 
-                          class="w-full bg-gray-200 rounded-full px-6 py-3 text-gray-700 outline-none focus:ring-2 focus:ring-green-500 transition placeholder-gray-400"
+                          type="text" 
+                          v-model="form.nome"
+                          class="w-full bg-white border border-gray-300 rounded-[4px] px-4 py-2.5 text-gray-700 outline-none focus:border-[#155e42] focus:ring-1 focus:ring-[#155e42] transition"
                         >
                     </div>
+
+                    <div>
+                        <label class="block font-atyp-medium text-[#555555] text-[13px] uppercase mb-1.5 tracking-wide">E-mail</label>
+                        <input 
+                          type="email" 
+                          v-model="form.email"
+                          class="w-full bg-white border border-gray-300 rounded-[4px] px-4 py-2.5 text-gray-700 outline-none focus:border-[#155e42] focus:ring-1 focus:ring-[#155e42] transition"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block font-atyp-medium text-[#555555] text-[13px] uppercase mb-1.5 tracking-wide">Telefone</label>
+                        <input 
+                          type="tel" 
+                          v-model="form.telefone"
+                          class="w-full bg-white border border-gray-300 rounded-[4px] px-4 py-2.5 text-gray-700 outline-none focus:border-[#155e42] focus:ring-1 focus:ring-[#155e42] transition"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block font-atyp-medium text-[#555555] text-[13px] uppercase mb-1.5 tracking-wide">Celular</label>
+                        <input 
+                          type="tel" 
+                          v-model="form.celular"
+                          class="w-full bg-white border border-gray-300 rounded-[4px] px-4 py-2.5 text-gray-700 outline-none focus:border-[#155e42] focus:ring-1 focus:ring-[#155e42] transition"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block font-atyp-medium text-[#555555] text-[13px] uppercase mb-1.5 tracking-wide">Estado</label>
+                        <select 
+                          v-model="form.estado"
+                          class="w-full bg-white border border-gray-300 rounded-[4px] px-4 py-2.5 text-gray-700 outline-none focus:border-[#155e42] focus:ring-1 focus:ring-[#155e42] transition cursor-pointer"
+                        >
+                            <option value="">Selecione...</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="PR">Paraná</option>
+                            </select>
+                    </div>
+
+                    <div>
+                        <label class="block font-atyp-medium text-[#555555] text-[13px] uppercase mb-1.5 tracking-wide">Cidade</label>
+                        <select 
+                          v-model="form.cidade"
+                          class="w-full bg-white border border-gray-300 rounded-[4px] px-4 py-2.5 text-gray-700 outline-none focus:border-[#155e42] focus:ring-1 focus:ring-[#155e42] transition cursor-pointer"
+                        >
+                            <option value="">Selecione...</option>
+                            </select>
+                    </div>
+
                 </div>
 
                 <div>
-                    <label class="block font-atyp text-black mb-2 pl-2">Email</label>
-                    <input 
-                      type="email" 
-                      placeholder="Coloque seu melhor email..." 
-                      class="w-full bg-gray-200 rounded-full px-6 py-3 text-gray-700 outline-none focus:ring-2 focus:ring-green-500 transition placeholder-gray-400"
+                    <label class="block font-atyp-medium text-[#555555] text-[13px] uppercase mb-1.5 tracking-wide">Como você conheceu a nossa empresa</label>
+                    <select 
+                      v-model="form.comoConheceu"
+                      class="w-full bg-white border border-gray-300 rounded-[4px] px-4 py-2.5 text-gray-700 outline-none focus:border-[#155e42] focus:ring-1 focus:ring-[#155e42] transition cursor-pointer"
                     >
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Google">Google / Pesquisa</option>
+                        <option value="Indicacao">Indicação</option>
+                    </select>
                 </div>
 
                 <div>
-                    <label class="block font-atyp text-black mb-2 pl-2">Cidade:</label>
-                    <input 
-                      type="text" 
-                      placeholder="Coloque sua cidade..." 
-                      class="w-full bg-gray-200 rounded-full px-6 py-3 text-gray-700 outline-none focus:ring-2 focus:ring-green-500 transition placeholder-gray-400"
-                    >
+                    <label class="block font-atyp-medium text-[#555555] text-[13px] uppercase mb-1.5 tracking-wide">Pergunte ao vendedor (Opcional)</label>
+                    <textarea 
+                      v-model="form.mensagem"
+                      rows="3" 
+                      class="w-full bg-white border border-gray-300 rounded-[4px] px-4 py-2.5 text-gray-700 outline-none focus:border-[#155e42] focus:ring-1 focus:ring-[#155e42] transition resize-none"
+                    ></textarea>
                 </div>
 
                 <div class="pt-4">
-                    <button class="bg-[#22c55e] hover:bg-[#15803d] text-white font-atyp-medium py-3 px-10 rounded-full uppercase tracking-wider transition shadow-md w-full md:w-auto">
+                    <button type="submit" class="bg-[#155e42] hover:bg-[#0e3a28] text-white font-atyp-medium py-3 px-10 rounded-full uppercase tracking-wider transition shadow-md w-full md:w-auto">
                         CADASTRAR
                     </button>
                 </div>

@@ -7,7 +7,7 @@
     <div class="max-w-[1200px] mx-auto px-6">
       
       <h1 class="text-5xl md:text-7xl font-bold text-black uppercase mb-16 tracking-tight">
-        FALE CONOSCO
+        ORCAMENTO
       </h1>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <h3 class="font-bold text-black uppercase mb-1">TELEFONE/WHATSAPP</h3>
-                <p class="font-bold text-lg text-black">+55 (69) 9999-9999</p>
+                <p class="font-bold text-lg text-black">+55 (69) 98138-0004</p>
             </div>
 
             <div class="bg-white rounded-[30px] p-8 md:p-10 shadow-sm border border-gray-200">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <h3 class="font-bold text-black uppercase mb-1">E-MAIL</h3>
-                <p class="font-bold text-lg text-black">faleconosco@motopam.com.br</p>
+                <p class="font-bold text-lg text-black">vendas@motopratico.com.br</p>
             </div>
 
             <div class="bg-white rounded-[30px] p-8 md:p-10 shadow-sm border border-gray-200">
@@ -48,8 +48,7 @@
                 </div>
                 <h3 class="font-bold text-black uppercase mb-1">LOCALIZAÇÃO</h3>
                 <p class="font-bold text-sm md:text-base text-black uppercase leading-tight">
-                    RUA JÚLIO, ROD. MAXIMILIANO GAIDZINSKI, 747<br>
-                    - MINA BRASIL, CRICIÚMA - SC, 88801-304
+                  Localização: R. Dom Pedro II - Monte Cristo, Ariquemes - RO, 76877-136
                 </p>
             </div>
 
