@@ -37,15 +37,6 @@ const allProducts = [
   },
   { 
     id: 3, 
-    name: 'MPS 40L Tampa Aberta', 
-    folder: 'mps40l-tampa-aberta',
-    capacidade: '40 Litros',
-    dimensoes: '0,39 x 0,67 x 0,29',
-    peso: '5 kg',
-    images: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
-  },
-  { 
-    id: 4, 
     name: 'MPS 40L', 
     folder: 'mps40l',
     capacidade: '40 Litros',
@@ -54,18 +45,18 @@ const allProducts = [
     images: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
   },
   { 
-    id: 5, 
-    name: 'MP 90L Tampa Alta', 
-    folder: 'mp90l-tampa-alta',
-    capacidade: '90 Litros',
-    dimensoes: '0,55 x 0,71 x 0,30',
+    id: 4, 
+    name: 'MPS 40L Tampa aberta', 
+    folder: 'mps40l-tampa-aberta',
+    capacidade: '40 Litros',
+    dimensoes: '0,39 x 0,67 x 0,29',
     peso: '5 kg',
     images: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
   },
   { 
-    id: 6, 
-    name: 'MP 90L Tampa Baixa', 
-    folder: 'mp90l-tampa-baixa',
+    id: 5, 
+    name: 'MPH 90L', 
+    folder: 'mph90l',
     capacidade: '90 Litros',
     dimensoes: '0,55 x 0,71 x 0,30',
     peso: '5 kg',
@@ -73,8 +64,17 @@ const allProducts = [
   },
   { 
     id: 7, 
+    name: 'MP 90L Tampa Baixa', 
+    folder: 'mps90l-tampa-baixa',
+    capacidade: '90 Litros',
+    dimensoes: '0,55 x 0,71 x 0,30',
+    peso: '5 kg',
+    images: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
+  },
+  { 
+    id: 6, 
     name: 'MP 90L Infectante', 
-    folder: 'mp90l-infectante',
+    folder: 'mps90l-infectante',
     capacidade: '90 Litros',
     dimensoes: '0,55 x 0,71 x 0,30',
     peso: '5 kg',
@@ -82,8 +82,8 @@ const allProducts = [
   },
   { 
     id: 8, 
-    name: 'MPH 90L', 
-    folder: 'mph90l',
+    name: 'MPS 90L', 
+    folder: 'mps90l',
     capacidade: '90 Litros',
     dimensoes: '0,60 x 0,46 x 0,50',
     peso: '10 kg',
@@ -118,8 +118,8 @@ const allProducts = [
   },
   { 
     id: 12, 
-    name: 'MP 600', 
-    folder: 'mp600',
+    name: 'MP 600L', 
+    folder: 'mp600l',
     capacidade: '600 Litros',
     dimensoes: '1,05 x 1,05 x 0,71',
     peso: '20 kg',
@@ -136,8 +136,8 @@ const allProducts = [
   },
   { 
     id: 14, 
-    name: 'MP 1500', 
-    folder: 'mp1500',
+    name: 'MP 1500L', 
+    folder: 'mp1500l',
     capacidade: '1500 Litros',
     dimensoes: '1,84 x 1,37 x 0,98',
     peso: '44 kg',

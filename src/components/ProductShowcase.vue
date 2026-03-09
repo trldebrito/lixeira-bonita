@@ -10,12 +10,12 @@ import lixeira5 from '../assets/lixeira-favorite/5.png'
 import lixeira6 from '../assets/lixeira-favorite/6.png'
 
 const products = [
-  { name: 'Lixeira MP 150L', img: lixeira3 },
-  { name: 'Lixeira MPS 40L', img: lixeira6 },
-  { name: 'Lixeira MP 350L', img: lixeira4 },
-  { name: 'Lixeira MPS 90L', img: lixeira1 },
-  { name: 'Lixeira MP 1500L', img: lixeira5 },
-  { name: 'Lixeira Seletiva', img: lixeira2 },
+  { name: 'Lixeira MP 1100L', img: lixeira3, link: '/produto/13' },
+  { name: 'Lixeira MPS 40L', img: lixeira6, link: '/produto/3' },
+  { name: 'Lixeira MP 350L', img: lixeira4, link: '/produto/11' },
+  { name: 'Lixeira MPS 90L', img: lixeira1, link: '/produto/6' },
+  { name: 'Lixeira MP 1500L', img: lixeira5, link: '/produto/14' },
+  { name: 'Lixeira Seletiva', img: lixeira2, link: '/produto/16' },
 ]
 
 // Lógica do Carrossel
@@ -126,7 +126,7 @@ onUnmounted(() => {
                 />
               </div>
 
-              <RouterLink to="/produto/mp70" class="group/btn bg-[#155e42] hover:bg-[#0e3a28] text-white pl-8 pr-2 py-2 rounded-full font-atyp text-lg transition-all shadow-lg flex items-center gap-4 mt-auto">
+              <RouterLink :to="product.link" class="group/btn bg-[#155e42] hover:bg-[#0e3a28] text-white pl-8 pr-2 py-2 rounded-full font-atyp text-lg transition-all shadow-lg flex items-center gap-4 mt-auto">
                 Comprar
                 <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
                     <svg 

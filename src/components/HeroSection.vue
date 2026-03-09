@@ -3,13 +3,13 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 // Imports das Imagens Desktop
 import slide4 from '../assets/slide-header/4.png' 
-import slide3 from '../assets/slide-header/3.png' 
+import slide3 from '../assets/slide-header/3.jpeg' 
 import slide2 from '../assets/slide-header/2.png' 
 import slide1 from '../assets/slide-header/1.png' 
 
 // Imports das Imagens Mobile
 import slideMobile4 from '../assets/slide-header-mobile/4.png' 
-import slideMobile3 from '../assets/slide-header-mobile/3.png' 
+import slideMobile3 from '../assets/slide-header-mobile/3.jpeg' 
 import slideMobile2 from '../assets/slide-header-mobile/2.jpeg' 
 import slideMobile1 from '../assets/slide-header-mobile/1.jpeg' 
 
@@ -155,7 +155,7 @@ onUnmounted(() => {
   {{ slides[currentIndex].description }}
 </p>
 
-            <button 
+            <RouterLink to="/produtos"
               v-if="slides[currentIndex].buttonText"
               class="group/btn bg-[#155e42] hover:bg-[#0e3a28] text-white pl-6 pr-2 py-2 rounded-full font-medium text-base transition-all shadow-lg flex items-center gap-3 w-max mt-4 md:mt-8"
             >
@@ -165,7 +165,7 @@ onUnmounted(() => {
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
               </div>
-            </button>
+            </RouterLink>
 
           </div>
 

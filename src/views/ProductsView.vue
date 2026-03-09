@@ -8,7 +8,7 @@ const products = [
   { id: 2, name: 'mp70l-tampa-aberta', image: '1.jpg', title: 'MP 70L - Tampa Aberta'},
   { id: 3, name: 'mps40l', image: '1.jpg', title: 'MPS 40L'},
   { id: 4, name: 'mps40l-tampa-aberta', image: '1.jpg', title: 'MPS 40L - Tampa Aberta'},
-  { id: 5, name: 'mph90l', image: '1.jpg', title: 'MPH 40L'},
+  { id: 5, name: 'mph90l', image: '1.jpg', title: 'MPH 90L'},
   { id: 6, name: 'mps90l-infectante', image: '1.jpg', title: 'MPS 90L - Infectante'},
   { id: 7, name: 'mps90l-tampa-baixa', image: '1.jpg', title: 'MPS 90L - Tampa Baixa'},
   { id: 8, name: 'mps90l', image: '1.jpg', title: 'MPS 90L'},
