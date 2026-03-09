@@ -30,7 +30,7 @@ const getImageUrl = (product) => {
   <div class="bg-[#F0F2F5] min-h-screen pb-20 font-sans pt-12">
     <div class="max-w-[1200px] mx-auto px-6">
       
-      <h1 class="text-4xl md:text-6xl font-bold text-black uppercase mb-16 tracking-tight">
+      <h1 class="text-4xl md:text-6xl font-atyp-medium text-black uppercase mb-16 tracking-tight">
         LIXEIRAS PARA FAMÍLIAS
       </h1>
 
@@ -52,12 +52,12 @@ const getImageUrl = (product) => {
             
           </div>
 
-          <h3 class="text-xl font-bold text-black text-center group-hover:text-[#1d824c] transition-colors uppercase tracking-wide">
+          <h3 class="text-xl font-atyp-medium text-black text-center group-hover:text-[#1d824c] transition-colors uppercase tracking-wide">
             {{ product.title }}
           </h3>
 
           <div class="mt-2 flex justify-center">
-            <span class="text-sm font-semibold text-[#1d824c] opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="font-atyp text-sm font-semibold text-[#1d824c] opacity-0 group-hover:opacity-100 transition-opacity">
               VER DETALHES →
             </span>
           </div>
