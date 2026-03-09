@@ -5,6 +5,7 @@ import sobre2 from '../assets/sobre/02.png'
 import sobre3 from '../assets/sobre/03.png'
 import bandeira from '../assets/sobre/bandeira.svg'
 import coracao from '../assets/sobre/coracao.svg'
+import WhatsAppButton from '../components/WhatsAppButton.vue'
 </script>
 
 <template>
@@ -80,4 +81,6 @@ import coracao from '../assets/sobre/coracao.svg'
 
     </div>
   </div>
+
+  <WhatsAppButton />
 </template>

@@ -1,5 +1,6 @@
 <script setup>
   import contactImg from '../assets/fale-conosco.png' 
+import WhatsAppButton from '../components/WhatsAppButton.vue';
 </script>
 
 <template>
@@ -62,4 +63,7 @@
 
     </div>
   </div>
+
+
+  <WhatsAppButton />
 </template>

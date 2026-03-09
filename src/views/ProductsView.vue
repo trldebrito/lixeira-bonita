@@ -1,4 +1,6 @@
 <script setup>
+import WhatsAppButton from '../components/WhatsAppButton.vue';
+
 // Simulando uma lista de produtos. 
 // No futuro, isso pode vir de uma API ou arquivo de dados.
 const products = [
@@ -66,4 +68,6 @@ const getImageUrl = (product) => {
       </div>
     </div>
   </div>
+
+  <WhatsAppButton />
 </template>

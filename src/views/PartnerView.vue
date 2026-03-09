@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 import partnerImg from '../assets/patner-page.jpg' 
+import WhatsAppButton from '../components/WhatsAppButton.vue';
 
 // Estado do formulário atualizado com os novos campos da imagem
 const form = ref({
@@ -48,6 +49,10 @@ const estados = [
             
             <p class="text-lg text-gray-700 font-atyp leading-relaxed font-atyp">
               A Lixeira Bonita busca parceiros que desejam agregar ao seu portfólio produtos resistentes, duráveis e com excelente aceitação no mercado. Nossas lixeiras em fibra de vidro atendem residências, empresas, condomínios e espaços públicos.
+            </p>
+
+            <p class="text-lg text-gray-700 font-atyp leading-relaxed font-atyp">
+              Podem se tornar parceiros:
             </p>
           </div>
 
@@ -138,4 +143,6 @@ const estados = [
       </div>
     </div>
   </div>
+
+  <WhatsAppButton />
 </template>

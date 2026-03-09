@@ -6,6 +6,7 @@ import MapSection from '../components/MapSection.vue'
 import GuaranteeSection from '../components/GuaranteeSection.vue'
 import ResellerSection from '../components/ResellerSection.vue'
 import GroupSection from '../components/GroupSection.vue'
+import WhatsAppButton from '../components/WhatsAppButton.vue'
 </script>
 
 <template>
@@ -17,5 +18,6 @@ import GroupSection from '../components/GroupSection.vue'
     <BenefitsSection />
     <ResellerSection />
     <GroupSection />
+    <WhatsAppButton />
   </main>
 </template>
