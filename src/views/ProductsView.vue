@@ -2,16 +2,28 @@
 // Simulando uma lista de produtos. 
 // No futuro, isso pode vir de uma API ou arquivo de dados.
 const products = [
-  { id: 1, name: 'Lixeira MPCE' },
-  { id: 2, name: 'Lixeira MP 70' },
-  { id: 3, name: 'Lixeira MPS 70' },
-  { id: 4, name: 'Lixeira MP 150' },
-  { id: 5, name: 'Lixeira Basculante' },
-  { id: 6, name: 'Lixeira Seletiva' },
-  { id: 7, name: 'Lixeira Container' },
-  { id: 8, name: 'Lixeira Papeleira' },
-  { id: 9, name: 'Lixeira Externa' },
+  { id: 1, name: 'mp70l', image: '1.jpg', title: 'MP 70L' }, // Ajuste o nome do arquivo conforme sua pasta
+  { id: 2, name: 'mp70l-tampa-aberta', image: '1.jpg', title: 'MP 70L - Tampa Aberta'},
+  { id: 3, name: 'mps40l', image: '1.jpg', title: 'MPS 40L'},
+  { id: 4, name: 'mps40l-tampa-aberta', image: '1.jpg', title: 'MPS 40L - Tampa Aberta'},
+  { id: 5, name: 'mph90l', image: '1.jpg', title: 'MPH 40L'},
+  { id: 6, name: 'mps90l-infectante', image: '1.jpg', title: 'MPS 90L - Infectante'},
+  { id: 7, name: 'mps90l-tampa-baixa', image: '1.jpg', title: 'MPS 90L - Tampa Baixa'},
+  { id: 8, name: 'mps90l', image: '1.jpg', title: 'MPS 90L'},
+  { id: 9, name: 'mp130l', image: '1.jpg', title: 'MP 130L'},
+  { id: 10, name: 'mp170l', image: '1.jpg', title: 'MP 170L'},
+  { id: 11, name: 'mp350l', image: '1.jpg', title: 'MP 350L'},
+  { id: 12, name: 'mp600l', image: '1.jpg', title: 'MP 600L'},
+  { id: 13, name: 'mp1100l', image: '1.jpg', title: 'MP 1100L'},
+  { id: 14, name: 'mp1500l', image: '1.jpg', title: 'MP 1500L'},
+  { id: 15, name: 'seletiva-2un-70l', image: '1.jpg', title: 'Seletiva 2Un 70L'},
+  { id: 16, name: 'seletiva-3un-70l', image: '1.jpg', title: 'Seletiva 3Un 70L'},
+  // ... continue para os demais
 ]
+
+const getImageUrl = (product) => {
+  return new URL(`../assets/lixeiras/${product.name}/${product.image}`, import.meta.url).href
+}
 </script>
 
 <template>
@@ -30,21 +42,28 @@ const products = [
           :to="`/produto/${product.id}`" 
           class="group block"
         >
-          <div class="aspect-square bg-white border border-gray-400 mb-6 relative flex items-center justify-center transition-all duration-300 group-hover:border-black group-hover:shadow-md">
-             <svg class="absolute inset-0 w-full h-full text-gray-400" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <line x1="0" y1="0" x2="100" y2="100" stroke="currentColor" stroke-width="0.5" />
-                <line x1="100" y1="0" x2="0" y2="100" stroke="currentColor" stroke-width="0.5" />
-            </svg>
+          <div class="aspect-square bg-white border border-gray-300 mb-6 relative flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-[#1d824c] group-hover:shadow-xl">
+             
+             <img 
+               :src="getImageUrl(product)" 
+               :alt="product.name"
+               class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+             />
             
-            </div>
+          </div>
 
-          <h3 class="text-xl font-bold text-black text-center group-hover:text-[#1d824c] transition-colors">
-            {{ product.name }}
+          <h3 class="text-xl font-bold text-black text-center group-hover:text-[#1d824c] transition-colors uppercase tracking-wide">
+            {{ product.title }}
           </h3>
+
+          <div class="mt-2 flex justify-center">
+            <span class="text-sm font-semibold text-[#1d824c] opacity-0 group-hover:opacity-100 transition-opacity">
+              VER DETALHES →
+            </span>
+          </div>
         </RouterLink>
 
       </div>
-
     </div>
   </div>
 </template>
