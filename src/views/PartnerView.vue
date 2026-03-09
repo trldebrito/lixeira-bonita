@@ -14,6 +14,12 @@ const form = ref({
   comoConheceu: 'Facebook',
   mensagem: ''
 })
+
+const estados = [
+  'AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 
+  'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 
+  'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'
+]
 </script>
 
 <template>
@@ -69,7 +75,7 @@ const form = ref({
         </div>
 
         <div class="lg:col-span-5 bg-white rounded-[30px] p-8 md:p-10 shadow-xl border border-gray-50 sticky top-10">
-            <h3 class="text-xl font-bold text-black mb-6 uppercase tracking-tight">Fale com um consultor</h3>
+            <h3 class="text-xl font-atyp-medium text-black mb-6 uppercase tracking-tight">Fale com um consultor</h3>
             
             <form class="space-y-5" @submit.prevent="handleSubmit">
                 <div class="space-y-4">
@@ -90,14 +96,18 @@ const form = ref({
                     </div>
 
                     <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <label class="block font-atyp-medium text-[#555555] text-[12px] uppercase mb-1">Estado</label>
-                            <select v-model="form.estado" class="w-full bg-[#F8F9FA] border border-gray-200 rounded-lg px-4 py-3 outline-none">
-                                <option value="">UF</option>
-                                <option value="SP">SP</option>
-                                <option value="RJ">RJ</option>
-                            </select>
-                        </div>
+                      <div>
+                        <label class="block font-atyp-medium text-[#555555] text-[12px] uppercase mb-1">Estado</label>
+                        <select 
+                          v-model="form.estado" 
+                          class="w-full bg-[#F8F9FA] border border-gray-200 rounded-lg px-4 py-3 outline-none focus:border-[#155e42] transition cursor-pointer"
+                        >
+                            <option value="" disabled selected>UF</option>
+                            <option v-for="uf in estados" :key="uf" :value="uf">
+                              {{ uf }}
+                            </option>
+                        </select>
+                    </div>
                         <div>
                             <label class="block font-atyp-medium text-[#555555] text-[12px] uppercase mb-1">Cidade</label>
                             <input type="text" v-model="form.cidade" class="w-full bg-[#F8F9FA] border border-gray-200 rounded-lg px-4 py-3 outline-none">
@@ -119,7 +129,7 @@ const form = ref({
                     </div>
                 </div>
 
-                <button type="submit" class="w-full bg-[#155e42] hover:bg-[#0e3a28] text-white font-bold py-4 rounded-full uppercase tracking-widest transition-all transform hover:scale-[1.02] shadow-lg">
+                <button type="submit" class="w-full bg-[#155e42] hover:bg-[#0e3a28] text-white font-atyp-medium py-4 rounded-full uppercase tracking-widest transition-all transform hover:scale-[1.02] shadow-lg">
                     CADASTRAR AGORA
                 </button>
             </form>
