@@ -81,9 +81,10 @@ onUnmounted(() => {
     </div>
 
     <div class="w-full bg-[#F0F2F5] relative">
-      <div class="max-w-[1400px] mx-auto relative px-0 md:px-12"> <button 
+      <div class="max-w-[1400px] mx-auto relative px-0 md:px-12"> 
+        <button 
           @click="prevSlide"
-          class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-black text-white rounded-full items-center justify-center hover:bg-gray-800 transition shadow-lg"
+          class="absolute left-2 md:left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-black/80 text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition shadow-lg"
           aria-label="Produto Anterior"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
@@ -93,7 +94,7 @@ onUnmounted(() => {
 
         <button 
           @click="nextSlide"
-          class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-black text-white rounded-full items-center justify-center hover:bg-gray-800 transition shadow-lg"
+          class="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-black/80 text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition shadow-lg"
           aria-label="Próximo Produto"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
